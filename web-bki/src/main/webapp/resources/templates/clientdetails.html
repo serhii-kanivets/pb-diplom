@@ -1,0 +1,59 @@
+<div xmlns="http://java.sun.com/jsf/html">
+    <form class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label">ИД</label>
+
+            <div class="controls">
+                <input type="text" id="id" ng-model="client.clientId" readonly/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">ИНН</label>
+
+            <div class="controls">
+                <input type="text" id="inn" ng-model="client.inn"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Фамилия</label>
+
+            <div class="controls">
+                <input type="text" id="sName" ng-model="client.sName"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Имя</label>
+
+            <div class="controls">
+                <input type="text" id="fName" ng-model="client.fName"/>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">Отчество</label>
+
+            <div class="controls">
+                <input type="text" id="mName" ng-model="client.mName"/>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">Дата рождения</label>
+
+            <div class="controls">
+                <input type="text" id="birthDate" ng-model="client.birthDate"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Пасспорт</label>
+
+            <div class="controls">
+                <input type="text" id="passp" ng-model="client.passp"/>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="btn btn-primary" ng-click="saveClient()">Сохранить</button>
+            <a href="#clients" class="btn btn-default" ng-click="closeClient()">Закрыть</a>
+        </div>
+    </form>
+</div>

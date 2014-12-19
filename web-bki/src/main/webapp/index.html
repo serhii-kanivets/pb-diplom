@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="bki">
+    <head>
+        <title>Бюро кредитных историй</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="resources/lib/angular.min.js"></script>
+        <script src="resources/lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/lib/angular-route.min.js"></script>
+        <script src="resources/js/bkiMain.js"></script>
+        <link href="resources/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="resources/css/bki.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content" class="container">
+            <div class="alert alert-danger" ng-show="alert.show">
+                <button type=button class="close" ng-click="alert.hide()"><i class="icon-remove"></i></button>
+                {{alert.msg}}
+            </div>
+            <header class="page-header"><h1>Бюро кредитных историй</h1></header>
+            <div class="row-fluid">
+                <div class="span2 "></div>
+                <div class="span10">
+                    <ul class="nav nav-tabs">
+                        <li ng-class="{active:tab==='clients'}" ng-click="tab = 'clients'">
+                            <a href="#clients"><h4>Клиенты</h4></a>
+                        </li>
+                        <li ng-class="{active:tab==='banks'}"ng-click="tab = 'banks'">
+                            <a href="#"><h4>Банки</h4></a>
+                        </li>
+                        <li ng-class="{active:tab==='currencies'}"ng-click="tab = 'currencies'">
+                            <a href="#"><h4>Валюты</h4></a>
+                        </li>
+                    </ul>                                        
+                    <div class="tab-pane">
+                        <ng-view></ng-view>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <footer class=""></footer>
+    </body>
+</html>

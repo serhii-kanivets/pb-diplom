@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Core/Core.iml" filepath="$PROJECT_DIR$/Core/Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DaoBusiness/DaoBusiness.iml" filepath="$PROJECT_DIR$/DaoBusiness/DaoBusiness.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HttpServices/HttpServices.iml" filepath="$PROJECT_DIR$/HttpServices/HttpServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwingClient/SwingClient.iml" filepath="$PROJECT_DIR$/SwingClient/SwingClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/diplom.kanivets.iml" filepath="$PROJECT_DIR$/diplom.kanivets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-bki/web-bki.iml" filepath="$PROJECT_DIR$/web-bki/web-bki.iml" />
+    </modules>
+  </component>
+</project>

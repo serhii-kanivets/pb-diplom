@@ -1,0 +1,29 @@
+<div>     
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>ИД</th>
+                <th>ИНН</th>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>Отчество</th>
+                <th>Дата рождения</th>
+                <th>Пасспорт</th>  
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="client in clients">            
+                    <td>{{client.clientId}}</td>
+                    <td>{{client.inn}}</td>
+                    <td>{{client.sName}}</td>
+                    <td>{{client.fName}}</td>
+                    <td>{{client.mName}}</td>
+                    <td>{{client.birthDate}}</td>
+                    <td>{{client.passp}}</td>
+                    <td><a href="#clients/{{client.clientId}}"><button class="btn-block"><i class="icon-pencil"></i></button></a></td>
+            </tr>                    
+        </tbody>
+    </table>
+    <p>{{client}}</p>
+</div>
